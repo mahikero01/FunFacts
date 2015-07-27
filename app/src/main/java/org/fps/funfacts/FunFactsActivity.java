@@ -38,15 +38,10 @@ public class FunFactsActivity extends Activity {
                     "On average, it takes 66 days to form a new habit.", 
                     "Mammoths still walked the earth when the Great Pyramid was being built." 
                 };
-                
-                
-                
-                
-                
-                
+            
                 String fact = "";
                 Random randomGenerator = new Random();
-                int randomNumber = randomGenerator.nextInt(3);
+                int randomNumber = randomGenerator.nextInt(10);
                 
                 if ( randomNumber == 0 ) {
                     fact = "Ants stretch when they wake up";
