@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 
 public class FunFactsActivity extends Activity {
 
@@ -24,10 +26,10 @@ public class FunFactsActivity extends Activity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fact = " ";
-
-
-
+                String fact = "";
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt();
+                fact = randomNumber + "";
                 factLabel.setText(fact);
             }
         };
