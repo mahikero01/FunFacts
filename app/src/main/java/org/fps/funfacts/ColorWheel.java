@@ -21,7 +21,7 @@ public class ColorWheel {
   
   
   
-  public String getColor() {
+  public int getColor() {
     
     
     String color = "";
@@ -29,8 +29,9 @@ public class ColorWheel {
     int randomNumber = randomGenerator.nextInt(mColors.length);
     
     color = mColors[randomNumber];
+    int colorAsInt = Color.parseColor(color);
     
-    return color;
+    return colorAsInt;
   }
 
 }
