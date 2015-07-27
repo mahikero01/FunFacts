@@ -27,6 +27,7 @@ public class FunFactsActivity extends Activity {
                 String fact = "";
 
 
+
                 factLabel.setText(fact);
             }
         };
