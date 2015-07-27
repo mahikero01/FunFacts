@@ -41,17 +41,9 @@ public class FunFactsActivity extends Activity {
             
                 String fact = "";
                 Random randomGenerator = new Random();
-                int randomNumber = randomGenerator.nextInt(10);
+                int randomNumber = randomGenerator.nextInt(facts.length);
                 
-                if ( randomNumber == 0 ) {
-                    fact = "Ants stretch when they wake up";
-                } else if ( randomNumber == 1 ) {
-                    fact = "Ostriches can run faster than horse";
-                } else if ( randomNumber == 2 ) {
-                    fact = "Olypic gold medals are actually made mostly of silver";
-                } else {
-                    fact = "Error";
-                }
+                fact = facts[randomNumber];
                 
                 factLabel.setText(fact);
             }
