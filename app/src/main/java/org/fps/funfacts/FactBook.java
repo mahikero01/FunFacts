@@ -2,8 +2,7 @@ package org.fps.funfacts
 
 public class FactBook {
   
-  public String getFact() {
-    String[] facts = { 
+  public String[] mFacts = { 
                     "Ants stretch when they wake up in the morning.", 
                     "Ostriches can run faster than horses.", 
                     "Olympic gold medals are actually made mostly of silver.", 
@@ -15,12 +14,17 @@ public class FactBook {
                     "On average, it takes 66 days to form a new habit.", 
                     "Mammoths still walked the earth when the Great Pyramid was being built." 
     };
+  
+  
+  
+  public String getFact() {
+    
     
     String fact = "";
     Random randomGenerator = new Random();
-    int randomNumber = randomGenerator.nextInt(facts.length);
+    int randomNumber = randomGenerator.nextInt(mFacts.length);
     
-    fact = facts[randomNumber];
+    fact = mFacts[randomNumber];
     
     return fact;
   }
