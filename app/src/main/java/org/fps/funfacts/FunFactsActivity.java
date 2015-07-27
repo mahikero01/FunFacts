@@ -41,7 +41,7 @@ public class FunFactsActivity extends Activity {
                 if ( randomNumber == 2 ) {
                     fact = "Olypic gold medals are actually made mostly of silver";
                 }
-                fact = randomNumber + "";
+                
                 factLabel.setText(fact);
             }
         };
