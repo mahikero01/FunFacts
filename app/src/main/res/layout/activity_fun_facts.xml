@@ -32,6 +32,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/white"
-        android:clickable="true" />
+        android:clickable="true" 
+        android:textColor="#ff51b460" />
 
 </RelativeLayout>
