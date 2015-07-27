@@ -28,7 +28,7 @@ public class FunFactsActivity extends Activity {
             public void onClick(View view) {
                 String fact = "";
                 Random randomGenerator = new Random();
-                int randomNumber = randomGenerator.nextInt();
+                int randomNumber = randomGenerator.nextInt(3);
                 fact = randomNumber + "";
                 factLabel.setText(fact);
             }
