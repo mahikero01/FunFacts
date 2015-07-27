@@ -24,7 +24,7 @@ public class FunFactsActivity extends Activity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fact = "";
+                String fact = " ";
 
 
 
