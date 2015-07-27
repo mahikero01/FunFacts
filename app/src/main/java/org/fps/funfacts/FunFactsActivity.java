@@ -32,14 +32,12 @@ public class FunFactsActivity extends Activity {
                 
                 if ( randomNumber == 0 ) {
                     fact = "Ants stretch when they wake up";
-                }
-                
-                if ( randomNumber == 1 ) {
+                } else if ( randomNumber == 1 ) {
                     fact = "Ostriches can run faster than horse";
-                }
-                
-                if ( randomNumber == 2 ) {
+                } else if ( randomNumber == 2 ) {
                     fact = "Olypic gold medals are actually made mostly of silver";
+                } else {
+                    fact = "Error";
                 }
                 
                 factLabel.setText(fact);
