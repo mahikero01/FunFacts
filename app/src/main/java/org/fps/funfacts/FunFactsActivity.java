@@ -15,6 +15,7 @@ import java.util.Random;
 public class FunFactsActivity extends Activity {
     
     private FactBook mFactBook = new FactBook();
+    private ColorWheel mColorWheel = new ColorWheel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,16 @@ public class FunFactsActivity extends Activity {
 
         final TextView factLabel = (TextView) findViewById(R.id.factTextView);
         Button showFactButton= (Button) findViewById(R.id.showFactButton);
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String fact = mFactBook.getFact();
                 factLabel.setText(fact);
+                
+                int color = mColorWheel.getColor();
+                relativeLayout.setBackgroundColor(color);
             }
         };
         showFactButton.setOnClickListener(listener);
