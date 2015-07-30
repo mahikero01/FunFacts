@@ -1,5 +1,7 @@
 package org.fps.funfacts;
 
+import java.util.Random;
+
 public class FactBook {
   
   public String[] mFacts = { 
