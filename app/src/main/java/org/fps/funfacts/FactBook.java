@@ -1,4 +1,4 @@
-package org.fps.funfacts
+package org.fps.funfacts;
 
 public class FactBook {
   
